@@ -42,24 +42,17 @@ const Header = ({ onSearch, onQuickAdd, searchValue = '' }) => {
           />
         </div>
 
-        {/* Quick Actions */}
+{/* Quick Actions */}
         <div className="flex items-center gap-3 flex-shrink-0">
           <Button
             onClick={onQuickAdd}
             icon="Plus"
             variant="primary"
-            className="hidden sm:inline-flex"
-          >
-            Add Task
-          </Button>
-          <Button
-            onClick={onQuickAdd}
-            icon="Plus"
-            variant="primary"
-            className="sm:hidden"
             size="sm"
-          />
-          
+            className="sm:size-auto"
+          >
+            <span className="hidden sm:inline">Add Task</span>
+          </Button>
           {/* Settings/Profile placeholder for future */}
           <motion.button
             whileHover={{ scale: 1.05 }}
