@@ -10,6 +10,7 @@ import ConfirmDialog from '@/components/organisms/ConfirmDialog';
 import SkeletonLoader from '@/components/molecules/SkeletonLoader';
 import ErrorState from '@/components/molecules/ErrorState';
 import EmptyState from '@/components/molecules/EmptyState';
+import SearchBar from '@/components/molecules/SearchBar';
 import Button from '@/components/atoms/Button';
 
 const Dashboard = () => {
@@ -298,9 +299,31 @@ const Dashboard = () => {
         onFilterChange={setFilters}
         taskCounts={taskCounts}
         availableTags={availableTags}
-      />
-{/* Main Content */}
+/>
+
+      {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
+        {/* Header Controls */}
+        <div className="flex-shrink-0 bg-white border-b border-gray-200 px-6 py-4">
+          <div className="max-w-4xl mx-auto flex items-center gap-4">
+            <div className="flex-1">
+              <SearchBar
+                value={searchQuery}
+                onChange={setSearchQuery}
+                placeholder="Search tasks by title, description, or tags..."
+                className="max-w-md"
+              />
+            </div>
+            <Button
+              variant="primary"
+              onClick={handleQuickAdd}
+              className="flex-shrink-0"
+            >
+              Add Task
+            </Button>
+          </div>
+        </div>
+
         {/* Content Area */}
         <div className="flex-1 p-6 overflow-y-auto">
           <div className="max-w-4xl mx-auto">
