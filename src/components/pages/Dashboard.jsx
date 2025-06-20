@@ -299,16 +299,8 @@ const Dashboard = () => {
         taskCounts={taskCounts}
         availableTags={availableTags}
       />
-
-      {/* Main Content */}
+{/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
-        {/* Header */}
-        <Header
-          onSearch={setSearchQuery}
-          onQuickAdd={handleQuickAdd}
-          searchValue={searchQuery}
-        />
-
         {/* Content Area */}
         <div className="flex-1 p-6 overflow-y-auto">
           <div className="max-w-4xl mx-auto">
