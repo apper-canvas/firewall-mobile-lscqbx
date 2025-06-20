@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "name": "finance",
+    "color": "#4ECDC4"
+  },
+  {
+    "Id": 2,
+    "name": "reports",
+    "color": "#FFE66D"
+  },
+  {
+    "Id": 3,
+    "name": "urgent",
+    "color": "#FF6B6B"
+  },
+  {
+    "Id": 4,
+    "name": "documentation",
+    "color": "#4DABF7"
+  },
+  {
+    "Id": 5,
+    "name": "development",
+    "color": "#7C72FF"
+  },
+  {
+    "Id": 6,
+    "name": "hr",
+    "color": "#95A5A6"
+  },
+  {
+    "Id": 7,
+    "name": "management",
+    "color": "#E74C3C"
+  },
+  {
+    "Id": 8,
+    "name": "marketing",
+    "color": "#F39C12"
+  },
+  {
+    "Id": 9,
+    "name": "research",
+    "color": "#9B59B6"
+  },
+  {
+    "Id": 10,
+    "name": "tools",
+    "color": "#1ABC9C"
+  },
+  {
+    "Id": 11,
+    "name": "presentation",
+    "color": "#E67E22"
+  },
+  {
+    "Id": 12,
+    "name": "client",
+    "color": "#3498DB"
+  }
+]
