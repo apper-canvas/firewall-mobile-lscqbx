@@ -1,19 +1,7 @@
 import { motion } from 'framer-motion';
 import ApperIcon from '@/components/ApperIcon';
-import SearchBar from '@/components/molecules/SearchBar';
-import Button from '@/components/atoms/Button';
 
 const Header = () => {
-  const handleAddTask = () => {
-    // TODO: Implement add task functionality
-    console.log('Add task clicked');
-  };
-
-  const handleSettings = () => {
-    // TODO: Implement settings functionality
-    console.log('Settings clicked');
-  };
-
   return (
     <motion.header
       initial={{ y: -20, opacity: 0 }}
@@ -36,38 +24,6 @@ const Header = () => {
             <p className="text-xs text-gray-500">Organize & Complete</p>
           </div>
         </motion.div>
-
-        {/* Header Controls */}
-        <div className="flex items-center gap-3 flex-shrink-0">
-          {/* Search Bar */}
-          <div className="hidden md:block">
-            <SearchBar 
-              placeholder="Search tasks..."
-              className="w-64"
-            />
-          </div>
-
-          {/* Add Task Button */}
-          <Button
-            variant="primary"
-            size="md"
-            onClick={handleAddTask}
-            className="flex items-center gap-2"
-          >
-            <ApperIcon name="Plus" size={16} />
-            <span className="hidden sm:inline">Add Task</span>
-          </Button>
-
-          {/* Settings Button */}
-          <Button
-            variant="ghost"
-            size="md"
-            onClick={handleSettings}
-            className="p-2"
-          >
-            <ApperIcon name="Settings" size={20} />
-          </Button>
-        </div>
       </div>
     </motion.header>
   );
